@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+.hvr-underline-from-left {
+    border-color: transparent; 
+}
+.hvr-underline-from-left:before {
+    background-color: #fff !important; 
+    height:2px;
+}
+.navbar-toggler-icon{
+    color: rgb(255, 255, 255) !important;
+}
+
+
+.dropdown-menu {
+    display: none;
+   
+    font-size: 15px;
+    font-weight: 400;
+
+
+}
+.nav-item:hover .dropdown-menu  {
+    display: block;
+    position: absolute;
+   
+}
+.nav-item .dropdown-menu li:hover a{
+color: rgb(0, 120, 255);
+background-color: transparent;
+}  
+.nav-item .dropdown-menu li{
+    padding: 5px;
+}
+.deep{
+  display: none;
+ 
+  font-size: 15px;
+  /* font-weight: bolder; */
+background-color: rgb(255, 255, 255);
+ 
+
+}
+
+ .dropdown-item2:hover .deep{
+  display: block;
+  opacity: 1;
+  position: absolute;
+  top: 22%;
+  left: 96%;
+ 
+
+}
+ li .dropdown-item2 {
+    text-decoration: none;
+}
+.deep li{
+list-style: none;
+text-transform: uppercase;
+}
+.deep li a{
+    text-decoration: none;
+    color: black !important;
+}
+.deep li:hover a{
+    color: rgb(0, 120, 255) !important;
+
+}
+.head{
+    height: 100vh;
+background-image: linear-gradient(rgb(0, 0, 0 , .5) , rgb(0, 0, 0 , .5)) , url(../img/hero-bg.jpg)  ;
+ background-position: center ;
+ background-size: cover ; 
+background-attachment: fixed;
+}
+.head .caption h1{
+    font-size: 60px;
+    color: white;
+}
+.head .caption h4{
+    position: relative;
+}
+.head .caption h4::before{
+    content: "|";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    color: white;
+    animation-name: word;
+    animation-duration: 5s;
+    animation-iteration-count:infinite ;
+}
+@keyframes word {
+    5%{
+        content: "De|";
+ 
+    }
+    10%{
+        content: "Des|";
+
+    }
+    15%{
+        content: "Desi|";
+
+    }
+    20%{
+        content: "Desig|";
+
+    }
+ 25%{
+    content: "Designe|";
+
+ }
+ 30%{
+    content: "Designer|";
+
+ }
+ 35%{
+    content: "Designe|";
+
+ }
+ 40%{
+    content: "Desig|";
+
+ }
+ 45%{
+    content: "Desi|";
+
+ }
+ 50%{
+    content: "Des|";
+
+ }
+ 52%{
+    content: "|";
+
+ }
+ 55%{
+    content: "fr|";
+ }
+ 60%{
+    content: "free|";
+ }
+ 65%{
+    content: "freelan|";
+
+ }
+ 70%{
+    content: "freelancer|";
+
+ }
+ 75%{
+    content: "freelan|";
+
+ }
+ 80%{
+    content: "free|";
+
+ }
+ 85%{
+    content: "fr|";
+
+ }
+ 86%{
+    content: "";
+ }
+ 90%{
+    content: "pho|";
+ }
+ 93%{
+    content: "photo|";
+
+ }
+ 96%{
+    content: "photogra|";
+
+ }
+ 99%{
+    content: "photographer|";
+
+ }
+ 100%{
+    content: "";
+
+ }
+}
+.about{
+overflow: hidden;
+/* box-sizing: border-box; */
+}
+.about h2{
+    font-size: 18px;
+    color: 
+    rgb(30, 30, 30);
+}
+.about span{
+    font-size: 16px;
+    color: rgb(78, 78, 78);
+}
+.about .lower .progress {
+ height: .7rem;
+}
+.about .right-side h3{
+position: relative;
+}
+.about .right-side h3::after{
+    content: "";
+    position: absolute;
+    top: 115%;
+    right: 80%;
+   /* transform: translateX(-60%); */
+    width: 20%;
+    height: 10%;
+    background-color:#0D6EFD ;
+}
+.services{
+    overflow: hidden;
+}
+.services .caption p{
+    color: rgb(78, 78, 78);
+position: relative;
+}
+.services .caption p::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 125%;
+    transform: translateX(-50%);
+    background-color:#0D6EFD ;
+    width: 50px;
+    height: 5px;
+}
+.services .container .inner span{
+ font-size: 1.4rem;
+ background-color:white ;
+ border-radius: 50%;
+ padding: 25px;
+border: #0D6EFD solid 8px;
+transition: all 1s;
+}  
+.services .container .inner:hover span{
+  color: white;
+  background-color: #0D6EFD;
+  border: #CDE1F8 solid 8px;
+}
+.services .container p{
+    color: rgb(78, 78, 78);
+}
+.counter{
+    height: 55vh;
+    background-image:   linear-gradient(rgba(13, 110, 253, .6) , rgba(13, 110, 253, .6) ), url(../img/counters-bg.jpg)  ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+@media all and (max-width:767px){
+ .counter{
+    height: 100vh;
+ }
+}
+.counter .container .row i{
+ padding: 20px;
+ border-radius: 50%;
+ border: solid 8px white;
+}
+
+.portfolio .container .item{
+    overflow: hidden;
+}
+.portfolio .caption p{
+ color: rgb(78, 78, 78);
+ position: relative;
+}
+.portfolio .caption p::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 125%;
+    transform: translateX(-50%);
+    background-color:#0D6EFD ;
+    width: 50px;
+    height: 5px;
+}
+.portfolio .item p{
+font-size: 12px;
+}
+
+  .portfolio .item .img {
+    overflow: hidden;
+} 
+.portfolio .item img{
+    transition: all 1s;
+    width: 100%;
+
+}
+.portfolio .item:hover img{
+ transform: scale(1.2);
+}
+.slider {
+    height: 70vh;
+    background-image:   linear-gradient(rgb(13, 110, 253, .6) , rgb(13, 110, 253, .6) ), url(../img/overlay-bg.jpg)  ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.slider .carousel-item .data .img-carousel img{
+    width: 100px;
+ height: 100px;
+    border-radius: 50%;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+   
+   
+}
+.blog .caption p{
+    color: rgb(78, 78, 78);
+    position: relative;
+}
+.blog .caption p::after{
+       content: "";
+       position: absolute;
+       left: 50%;
+       top: 125%;
+       transform: translateX(-50%);
+       background-color:#0D6EFD ;
+       width: 50px;
+       height: 5px;
+ }
+.blog .inner .card .parent{
+ position: relative;
+}
+.blog .inner .card .badg{
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translateX(-50%);
+}
+
+.blog .container .card a{
+    text-decoration: none;
+    color: black;
+    transition: all 1s;
+}
+.blog .container .card a:hover{
+    text-decoration: none;
+    color: #0D6EFD !important;
+}
+footer{
+    /* height: 100vh; */
+    background-image:   linear-gradient(rgba(13, 110, 253, .6) , rgba(13, 110, 253, .6) ), url(../img/overlay-bg.jpg)  ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer .row  h2{
+ position: relative;
+}
+footer .row  h2::after{
+    content: "";
+    position: absolute;
+    background-color:#0D6EFD ;
+    width: 50px;
+    height: 5px;
+    left: 0;
+    top: 125%;
+    width: 90px;
+   
+}
+   
+footer form a{
+   
+    text-decoration: none;
+    color: #f5f5f5;
+    background-color: #0D6EFD;
+   border-radius: 30px;
+   padding: 10px 25px;
+   transition: all 1s;
+}
+footer form a:hover{
+    background-color: #3393FF;
+    border:  5px solid #BCD8F9;
+}
+footer form .button{
+ text-align: center;
+ padding-top: 20px;
+}
+footer ul a{
+color: black;
+font-size: 20px;
+background-color: white;
+border-radius: 50%;
+border: #0D6EFD solid 3px;
+padding: 12px;
+transition: all ;
+}
+footer ul a:hover {
+    color: #f5f5f5;
+    background-color: #3393FF;
+    border: #BCD8F9;
+}
+
+ .end{
+    background-color: #0062D3;
+}
+.latest .caption a{
+    text-decoration: none;
+    color: #f5f5f5;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
